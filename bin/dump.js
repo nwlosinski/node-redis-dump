@@ -392,7 +392,7 @@
                       commands.push("EXPIRE  " + (_this.escape(key)) + " " + ttl);
                     }
                   }
-                  return callback(null, commands.join("\n"));
+                  return callback(null, commands.join("${nl}"));
               }
             } catch (error1) {
               e = error1;
