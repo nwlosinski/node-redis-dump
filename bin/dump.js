@@ -392,6 +392,7 @@
                       commands.push("EXPIRE  " + (_this.escape(key)) + " " + ttl);
                     }
                   }
+                  //${nl} - custom new line separator
                   return callback(null, commands.join("${nl}"));
               }
             } catch (error1) {
