@@ -49,7 +49,7 @@
     }
 
     RedisDumper.prototype.close = function() {
-      return this.db.end();
+      return this.db.quit();
     };
 
     RedisDumper.prototype.escape = function(value) {
